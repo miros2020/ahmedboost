@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Sallam's LoL Boosting Services</title>
+    <style>
+        :root {
+            --primary-color: #0a0a0c;
+            --secondary-color: #c8aa6e;
+            --accent-color: #00b3ff;
+            --text-color: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: rgba(10, 10, 12, 0.8);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .boosters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .booster-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#boosters">Our Boosters</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ahmed Sallam's LoL Boosting Services</h1>
+                <p>Professional boosting by Challenger players</p>
+                <button class="cta-button">Get Boosted Now</button>
+            </div>
+        </section>
+        
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Solo Boost with Master Yi</h3>
+                    <p>Specialized boosting using Master Yi</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Placement Matches</h3>
+                    <p>Maximize your rank in placement games</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Rank Boost</h3>
+                    <p>Reach your desired rank fast</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <h3>Duo Queue Boost</h3>
+                    <p>Climb the ladder with a pro by your side</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="boosters" class="container">
+            <h2>Our Boosters</h2>
+            <div class="boosters">
+                <div class="booster-card">
+                    <h3>Ahmed Sallam</h3>
+                    <p>Admin & Main Booster</p>
+                    <p>Rank: Challenger</p>
+                    <p>Speciality: Master Yi, Ekko, Kayn</p>
+                </div>
+                <div class="booster-card">
+                    <h3>Booster 2</h3>
+                    <p>Rank: Master</p>
+                    <p>Speciality: ADC, Mid</p>
+                </div>
+                <div class="booster-card">
+                    <h3>Booster 3</h3>
+                    <p>Rank: Grandmaster</p>
+                    <p>Speciality: Top, Jungle</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to boost your rank? Get in touch with us now!</p>
+            <button class="cta-button">Contact Now</button>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ahmed Sallam's LoL Boosting Services. Not affiliated with Riot Games.</p>
+        </div>
+    </footer>
+</body>
+</html>
